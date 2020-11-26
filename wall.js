@@ -9,6 +9,6 @@ class wall{
 
     show(){
         rectMode(CENTER);
-        rect(x,y,this.width,this.height);
+        rect( this.body.position.x , this.body.position.y, this.width, this.height ) ;
     }
   }
