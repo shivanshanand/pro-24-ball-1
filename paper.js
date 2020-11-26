@@ -13,9 +13,12 @@ class paper{
     }
 
     display(){
-        fill("pink")
-        rectMode(CENTER);
-        rect(0,0,this.radius);
+        push(); 
+        fill("pink"); 
+        translate(this.body.position.x, this.body.position.y ); 
+        rotate(this.body.angle);
+        ellipse(0,0, this.radius, this.r); 
+        pop();
     }
 
 
